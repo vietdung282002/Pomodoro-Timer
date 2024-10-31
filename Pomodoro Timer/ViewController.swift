@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     private var timer = Timer()
     private var isTimeStarted = false
     private var isAnimationStarted = false
-    private var time = 25*60
+    private var time = 1*60
     
     private var didApplyConstraints = false
     
@@ -62,9 +62,9 @@ class ViewController: UIViewController {
     
     @IBAction func resetButtonTapped(_ sender: Any){
         timer.invalidate()
-        time = 25*60
+        time = 1*60
         isTimeStarted = false
-        timeLabel.text = "25:00"
+        timeLabel.text = "01:00"
         startButton.setTitle("Start", for: .normal)
         stopAnimation()
     }
